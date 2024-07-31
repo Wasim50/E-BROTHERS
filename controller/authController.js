@@ -1,5 +1,5 @@
 let user = require("../model/userModel");
-
+q = 2
 async function Register(req, res) {
     let data = await user.Register(req.body).catch((err) => {
         return { error: err }
